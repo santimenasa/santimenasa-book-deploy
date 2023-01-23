@@ -10,7 +10,7 @@ const Book = ({ book }) => {
 
   const deleteHandler = async() => {
    await axios
-      .delete(`https://santimenasa-book-deploy-production.up.railway.app//books/${_id}`)
+      .delete(`https://santimenasa-book-deploy-production.up.railway.app/books/${_id}`)
       .then((res) => res.data)
       .then(() => history("/"))
       .then(() => history("/books"));
