@@ -21,7 +21,7 @@ const BookDetail = () => {
   console.log(id);
   useEffect(() => {
     const fetchHandler = async () => {
-      const bookData = await axios(`http://localhost:5000/books/${id}`)
+      const bookData = await axios(`santimenasa-book-deploy-production.up.railway.app/${id}`)
       setInputs(bookData.data.books)
       console.log(bookData.data);
     }
@@ -30,7 +30,7 @@ const BookDetail = () => {
 
   const sendRequest = async () => {
     await axios
-      .put(`http://localhost:5000/books/${id}`, {
+      .put(`santimenasa-book-deploy-production.up.railway.app/books/${id}`, {
         name: String(inputs.name),
         author: String(inputs.author),
         description: String(inputs.description),

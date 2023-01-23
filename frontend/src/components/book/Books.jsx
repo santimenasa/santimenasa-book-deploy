@@ -4,7 +4,7 @@ import Book from "./Book";
 import "./book.css"
 import axios from "axios";
 
-const URL = "http://localhost:5000/books";
+const URL = "santimenasa-book-deploy-production.up.railway.app";
 
 const fetchHandler = async () => {
   return await axios.get(URL).then((res) => res.data);
