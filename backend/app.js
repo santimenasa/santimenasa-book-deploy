@@ -20,7 +20,7 @@ app.use("/books", router)
 
 //DB connection and server configuration
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(`${process.env.MONGO_URL}`)
 .then( () => console.log('Connected To DB'.blue))
 .then(() => app.listen(port, () => {
     console.log(`Example app listening on port ${port}`.cyan)
