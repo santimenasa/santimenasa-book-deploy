@@ -8,7 +8,7 @@ const Home = () => {
   <NavLink to={'/books'}>
   <Button  variant='contained'>
     <Typography variant='h2'>
-    View all Productsssssssss
+    View all Products
     </Typography>
    
   </Button>
