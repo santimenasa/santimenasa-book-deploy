@@ -1,19 +1,18 @@
-import { Box, Typography } from '@mui/material'
-import React from 'react'
+import { Box, Typography } from "@mui/material";
+import React from "react";
 
 const AboutUs = () => {
   return (
-<Box display={'flex'} flexDirection={"column"} alignItems={'center'}>
-  <Typography variant='h2'>
-    This is mi very first CRUD aplication made out of love
-  </Typography>
-  <Typography variant='h4'>
-    This MERN Stack aplicattion idea come up in mi head to practice programming skills. Also, reading is one of mi biggest passions thats why i decide to make this app.
-    Best regards
-  </Typography>
-</Box>
-    
-  )
-}
+    <Box display={"flex"} flexDirection={"column"} alignItems={"center"}>
+      <Typography variant="h2" mb={'4%'}>
+        This app shows every book upload in the Data Base and its details 
+      </Typography>
+     
+      <Typography variant="h4">
+        Books uploaded in this up might be on sale
+      </Typography>
+    </Box>
+  );
+};
 
-export default AboutUs
+export default AboutUs;
